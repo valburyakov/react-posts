@@ -2,12 +2,11 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 2em;
+  padding: 0.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -16,6 +15,12 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes logo-spin {
@@ -35,6 +40,18 @@
 
 .card {
   padding: 2em;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1em 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
 }
 
 .read-the-docs {
